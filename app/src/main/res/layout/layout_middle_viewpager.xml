@@ -1,0 +1,18 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- View Pager lets the user flip through the pages of data -->
+        <!-- View Pager needs an adapter in the main activity for the functionality -->
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager_container">
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+</merge>

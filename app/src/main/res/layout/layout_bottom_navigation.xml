@@ -1,0 +1,23 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <!-- BottomNavigationViewEx is an external library to
+            control the navigation animations -->
+        <!-- Menu is created separately under Menu resource which is
+            then included here -->
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bottom_nav"
+            android:background="@drawable/style_bottom_nav"
+            app:menu="@menu/bottom_nav_menu">
+        </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+
+    </RelativeLayout>
+
+</merge>

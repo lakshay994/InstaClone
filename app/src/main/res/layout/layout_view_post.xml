@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/photoProfilePhoto"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    app:civ_border_color="@android:color/black"
+                    app:civ_border_width="0.5dp" />
+
+                <TextView
+                    android:id="@+id/photoDisplayName"
+                    android:text="lakshay994"
+                    android:layout_toRightOf="@+id/photoProfilePhoto"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/ic_options"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <com.example.lakshaysharma.instaclone.Utils.SquareImageView
+                android:layout_marginVertical="5dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                android:id="@+id/photoMainImage"
+                android:layout_below="@+id/relLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/rellayout2"
+                android:background="@color/white"
+                android:layout_below="@+id/photoMainImage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/rellayout3"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_heart_red"
+                        android:visibility="invisible"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/photoLikeRed"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <ImageView
+                        android:src="@drawable/ic_heart_outlione"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/photoLikePlain"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:src="@drawable/ic_comment"
+                    android:layout_toRightOf="@+id/rellayout3"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/photoComment"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="15dp"
+                android:layout_marginBottom="50dp"
+                android:layout_below="@id/rellayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/photoLikeText"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="Liked by your friend and 30 others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/photoCaption"
+                    android:layout_below="@+id/photoLikeText"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:text="lakshay994 #discipline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/photoViewComments"
+                    android:layout_below="@+id/photoCaption"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"
+                    android:text="View All Comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/photoTimeDetails"
+                    android:layout_below="@+id/photoViewComments"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"
+                    android:text="Posted 3 days ago."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_bottom_navigation"/>
+
+</RelativeLayout>

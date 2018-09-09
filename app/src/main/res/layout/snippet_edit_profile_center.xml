@@ -1,0 +1,185 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/profileImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/changeProfilePhoto"
+                android:textSize="18sp"
+                android:text="Change Photo"
+                android:textColor="@color/link_blue"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/profileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/edit_center_rellayout"
+                android:layout_below="@+id/changeProfilePhoto"
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_username"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <EditText
+                    android:layout_marginLeft="40dp"
+                    android:hint="Username"
+                    android:id="@+id/changeUsername"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_center_rellayout1"
+                android:layout_below="@+id/edit_center_rellayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <EditText
+                    android:hint="Display Name"
+                    android:id="@+id/changeDisplayname"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_center_rellayout2"
+                android:layout_below="@+id/edit_center_rellayout1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_website"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <EditText
+                    android:hint="Website"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/changeWebsite"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_center_rellayout3"
+                android:layout_below="@+id/edit_center_rellayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_desc"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <EditText
+                    android:hint="Description"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/changeDescription"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/privateInfo"
+                android:layout_below="@+id/edit_center_rellayout3"
+                android:layout_marginTop="50dp"
+                android:textSize="28dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/border_bottom_grey"
+                android:text="Private Information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/edit_center_rellayout4"
+                android:layout_below="@+id/privateInfo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_email"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <EditText
+                    android:hint="Email"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/changeEmail"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_center_rellayout5"
+                android:layout_below="@+id/edit_center_rellayout4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_phone"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+                <EditText
+                    android:hint="Phone"
+                    android:layout_marginLeft="40dp"
+                    android:id="@+id/changePhoneNo"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</merge>

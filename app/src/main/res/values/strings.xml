@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">InstaClone</string>
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="profile_fragment">Profile</string>
+
+    <string name="user_account_settings">user_account_settings</string>
+    <string name="users">users</string>
+
+    <string name="calling_class">calling_class</string>
+    <string name="profile_activity">Profile Activity</string>
+    <string name="username">username</string>
+
+    <string name="confirm_password">ConfirmPasswordDialog</string>
+    <string name="user_email">email</string>
+    <string name="display_name">display_name</string>
+    <string name="description">description</string>
+    <string name="website">website</string>
+    <string name="phone_number">phone_number</string>
+    <string name="gallery">Gallery</string>
+    <string name="photo">Photo</string>
+    <string name="selected_image">Selected_Image</string>
+    <string name="user_photos">user_photos</string>
+    <string name="regular_photo">regular_photo</string>
+    <string name="profile_photo">profile_photo</string>
+    <string name="return_to_fragment">return_to_fragment</string>
+    <string name="camera_bitmap">camera_bitmap</string>
+    <string name="activity_number">activity_number</string>
+    <string name="view_post_fragmemnt">View Post</string>
+    <string name="user_id">user_id</string>
+    <string name="likes">likes</string>
+
+    <string name="caption">caption</string>
+    <string name="date_created">date_created</string>
+    <string name="image_path">image_path</string>
+    <string name="photo_id">photo_id</string>
+    <string name="tags">tags</string>
+    <string name="view_comments_fragments">View Comments</string>
+    <string name="comments">comments</string>
+    <string name="search_activity">Search Activity</string>
+    <string name="intent_user">intent_user</string>
+    <string name="view_profile_fragment">view_profile_fragment</string>
+    <string name="following">following</string>
+    <string name="followers">followers</string>
+    <string name="user_settings">user_settings</string>
+    <string name="home_activity">Home Activity</string>
+
+</resources>

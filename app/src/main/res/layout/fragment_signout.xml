@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:gravity="center_horizontal"
+        android:paddingTop="70dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:layout_marginTop="70dp"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:text="Are You Sure You Want To Sign Out?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/signOutButton"
+            android:text="Sign Out"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/signOutProgressbar"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+</RelativeLayout>

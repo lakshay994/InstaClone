@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/shareRel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/snippet_gallery_toolbar"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/shareRel"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_weight="60"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.example.lakshaysharma.instaclone.Utils.SquareImageView
+                android:src="@drawable/ic_launcher_background"
+                android:id="@+id/shareImagePreview"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <ProgressBar
+                android:layout_centerInParent="true"
+                android:id="@+id/shareProgressBar"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </RelativeLayout>
+
+        <GridView
+            android:numColumns="4"
+            android:id="@+id/shareGridView"
+            android:verticalSpacing="1dp"
+            android:horizontalSpacing="1dp"
+            android:stretchMode="none"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:layout_weight="40"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+        </GridView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+1.  Start with building the home layout which requires the bottom navigation, the top tab
+    and the view pager in the middle.
+2.  Build the view pager adapter and add the camera, home and the messages fragments.
+3.  Build the profile activity layout which includes the top bar snippet, the top profile snippet,
+    and the a grid view.
+4.  Build the Account settings layout which is triggered by the profile page's top bar snippet.
+5. 
